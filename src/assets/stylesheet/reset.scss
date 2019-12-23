@@ -1,0 +1,152 @@
+//各种手机的响应式适配
+
+@media screen and (min-width:350px){
+    html{font-size:342%;}
+}
+@media screen and (min-width:360px){
+    html{font-size:351.56%;}
+}
+@media screen and (min-width:375px){
+    html{font-size:366.2%;}
+}
+@media screen and (min-width:384px){
+    html{font-size:375%;}
+}
+@media screen and (min-width:390px){
+    html{font-size:380.85%;}
+}
+@media screen and (min-width:393px){    /* 小米NOTE */
+    html{font-size:383.79%;}
+}
+@media screen and (min-width:410px){
+    html{font-size:400%;}
+}
+@media screen and (min-width:432px){ /* 魅族3 */
+    html{font-size:421.875%;}
+}
+@media screen and (min-width:480px){
+    html{font-size:469%;}
+}
+@media screen and (min-width:540px){
+    html{font-size:527.34%;}
+}
+@media screen and (min-width:640px){
+    html{font-size: 625%;}
+}
+
+@media screen and (width:720px){
+    html{font-size: 703.125%;}
+}
+
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-weight: normal;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+ol, ul, li {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote {
+    &:before, &:after {
+        content: '';
+        content: none;
+    }
+}
+
+q {
+    &:before, &:after {
+        content: '';
+        content: none;
+    }
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* custom */
+
+a {
+    color: #7e8c8d;
+    text-decoration: none;
+    backface-visibility: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track-piece {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    &:vertical {
+        height: 5px;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 6px;
+    }
+
+    &:horizontal {
+        width: 5px;
+        background-color: rgba(125, 125, 125, 0.7);
+        border-radius: 6px;
+    }
+}
+
+html {
+    width: 100%;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+}
+
+body {
+    width: 100%;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", "微软雅黑", sans-serif;
+    line-height: 1;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html {
+    overflow-y: scroll;
+}
+
+/*清除浮动*/
+
+.clearfix {
+    &:before, &:after {
+        content: " ";
+        display: inline-block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+
+    *zoom: 1;
+}
+
+/*隐藏*/
+
+.dn {
+    display: none;
+}
