@@ -1,0 +1,38 @@
+.tabBar {
+    height: 100%;
+}
+.footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    border-top: 1PX solid #ccc;
+    background: white;
+    .router-link-active {
+        color: #ef4238;
+    }
+
+    li {
+        height: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 10px;
+        }
+
+        .van-icon {
+            font-size: 24px;
+            padding-top: 8px;
+            margin-bottom: 5px;
+        }
+
+        .active {
+            color: #ef4238;
+        }
+    }
+}
